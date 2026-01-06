@@ -1,6 +1,11 @@
-import { Hero } from "./components/scroll-bound-video-player";
-export default function Home() {
+
+import CreditCardSection from "./Credit Card/credit-card";
+
+const Page = () => {
   return (
-    <Hero/>
+    <div>
+      <CreditCardSection />
+    </div>
   );
 }
+export default Page;

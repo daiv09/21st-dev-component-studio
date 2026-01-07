@@ -1,10 +1,10 @@
 
-import CreditCardSection from "./Credit Card/credit-card";
+import HolographicBento from "./bento";
 
 const Page = () => {
   return (
     <div>
-      <CreditCardSection />
+      <HolographicBento />
     </div>
   );
 }

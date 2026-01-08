@@ -168,8 +168,8 @@ export default function AnalogueGauge({
         className="relative"
       >
         {/* Decorative HUD Circle behind gauge */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full border border-dashed border-neutral-800 animate-[spin_10s_linear_infinite]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full border border-neutral-800 opacity-50" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-85 h-85 rounded-full border border-dashed border-neutral-800 animate-[spin_10s_linear_infinite]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 rounded-full border border-neutral-800 opacity-50" />
 
         {/* --- ORIGINAL GAUGE STRUCTURE (UNTOUCHED STYLES) --- */}
         <div className="flex items-center justify-center relative">
@@ -205,13 +205,13 @@ export default function AnalogueGauge({
 
                 {/* TICKS CONTAINER */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                   <div className="relative w-0 h-0 top-[-20px]">
+                   <div className="relative w-0 h-0 -top-5">
                      {renderTicks()}
                    </div>
                 </div>
 
                 {/* DANGER ZONE */}
-                <svg className="absolute inset-0 w-full h-full rotate-[110deg] pointer-events-none opacity-40">
+                <svg className="absolute inset-0 w-full h-full rotate-110 pointer-events-none opacity-40">
                     <circle 
                       cx="50%" cy="50%" r="40%" 
                       fill="none" stroke="#ef4444" strokeWidth="8"
@@ -238,14 +238,14 @@ export default function AnalogueGauge({
                      marginLeft: "-2px"
                   }}
                 >
-                   <div className="absolute bottom-[-8px] left-[-4px] w-3 h-10 bg-neutral-800 rounded-sm" />
+                   <div className="absolute -bottom-2 -left-1 w-3 h-10 bg-neutral-800 rounded-sm" />
                 </motion.div>
                 
                 {/* CENTER CAP */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-neutral-700 to-neutral-900 shadow-[0_4px_10px_rgba(0,0,0,1)] z-20 border border-neutral-600" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-linear-to-br from-neutral-700 to-neutral-900 shadow-[0_4px_10px_rgba(0,0,0,1)] z-20 border border-neutral-600" />
 
                 {/* GLASS REFLECTION */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 rounded-full bg-linear-to-tr from-transparent via-white/5 to-transparent pointer-events-none" />
               </div>
             </div>
           </div>

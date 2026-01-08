@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useMotionValue,
   useSpring,
   useTransform,
-  AnimatePresence
 } from "framer-motion";
 
 // --- MAIN SECTION ---

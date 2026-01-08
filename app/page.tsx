@@ -1,11 +1,7 @@
+"use client";
 
-import HolographicBento from "./bento";
+import GlobalMap from "./today-2"
 
-const Page = () => {
-  return (
-    <div>
-      <HolographicBento />
-    </div>
-  );
+export default function Page() {
+  return <GlobalMap />;
 }
-export default Page;

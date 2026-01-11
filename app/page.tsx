@@ -1,10 +1,12 @@
 "use client";
-import NeoBrutalistWizard from "./today";
+import KineticTeamHybrid from "./in-today.tsx";
+
+
 
 const Page = () => {
 
   return (
-    <NeoBrutalistWizard />
+    <KineticTeamHybrid />
   );
 }
 

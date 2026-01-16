@@ -1,7 +1,7 @@
 
 import NeonHelixLoader from "@/hero/1"
-import MovingBlocksLoader from "@/hero/loader"
-import NeonCubeLoader from "@/hero/cube-loader"
+import MovingBlocksLoader from "@/hero/Blocks Loader/loader"
+import NeonCubeLoader from "@/hero/Cube Loader/cube-loader"
 import ElasticDotsLoader from "@/hero/4"
 import KineticDotsLoader from "@/hero/5"
 import QuantumCloudLoader from "@/hero/6"

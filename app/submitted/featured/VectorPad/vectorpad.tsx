@@ -35,11 +35,11 @@ export default function VectorPad() {
   const velocityY = useTransform(smoothY, (latest) => (latest - y.get()) * 0.5);
 
   // Update digital readout
-  useMotionValueEvent(smoothX, "change", (latest) => {
-      setCoords(prev => ({ ...prev, x: Math.round(latest) }));
+  useMotionValueEvent(x, "change", (latest) => {
+      setCoords(prev => ({ ...prev, x: Math.round(Number(latest)) }));
   });
-  useMotionValueEvent(smoothY, "change", (latest) => {
-      setCoords(prev => ({ ...prev, y: Math.round(latest) }));
+  useMotionValueEvent(y, "change", (latest) => {
+      setCoords(prev => ({ ...prev, y: Math.round(Number(latest)) }));
   });
 
   const handlePointerMove = (e: React.PointerEvent) => {

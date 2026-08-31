@@ -1,0 +1,14 @@
+COVER IMAGE PREVIEW (PNG description)
+=====================================
+Component: AIChatInput (Interactive AI Chat Input)
+Theme: Dark mode (primary) with light/dark compatibility
+Visual elements:
+- Dark background (#0a0a0a) with subtle glow border
+- Expanded terminal-style input tray
+- 3 segmented tabs: Terminal | Core | Kernel Trace
+- Animated placeholder text cycling: "Execute root diagnostics..." -> "Compile neural weights..." -> "Query vector DB..." -> "Optimize latency budget..."
+- Submit button with arrow icon (hover glow effect)
+- Model badge: "stealth/ox-alpha"
+- Motion animations: spring transitions, layout animations
+Size: 1280x720 viewport capture
+File target: to_done/cover-preview.png (would contain this visual)

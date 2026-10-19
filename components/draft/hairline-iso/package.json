@@ -1,0 +1,9 @@
+{
+  "name": "hairline-iso",
+  "version": "1.0.0",
+  "private": true,
+  "description": "20 isometric canvas figures built on the Hairline single-mount pattern (React + Canvas 2D + Tailwind tokens).",
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
+  "devDependencies": { "@types/react": "^18.3.0", "@types/react-dom": "^18.3.0", "react": "^18.3.1", "react-dom": "^18.3.1", "typescript": "^5.5.0" }
+}

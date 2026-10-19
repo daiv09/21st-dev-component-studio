@@ -1,0 +1,23 @@
+// Barrel file: every figure as a named export.
+export { makeFigure, type FigureProps } from "./kit/make";
+export type { HairlineOptions, Figure } from "./kit/mount";
+export { default as PistonEngine } from "./components/piston-engine/piston-engine";
+export { default as HydraulicArm } from "./components/hydraulic-arm/hydraulic-arm";
+export { default as EscapementClock } from "./components/escapement-clock/escapement-clock";
+export { default as SortingConveyor } from "./components/sorting-conveyor/sorting-conveyor";
+export { default as MicroserviceMesh } from "./components/microservice-mesh/microservice-mesh";
+export { default as TimeseriesAggregator } from "./components/timeseries-aggregator/timeseries-aggregator";
+export { default as VectorSpace } from "./components/vector-space/vector-space";
+export { default as K8sOrchestrator } from "./components/k8s-orchestrator/k8s-orchestrator";
+export { default as KanbanLanes } from "./components/kanban-lanes/kanban-lanes";
+export { default as PomodoroTower } from "./components/pomodoro-tower/pomodoro-tower";
+export { default as HabitAmphitheater } from "./components/habit-amphitheater/habit-amphitheater";
+export { default as GitBranchVisualizer } from "./components/git-branch-visualizer/git-branch-visualizer";
+export { default as OrderBookWall } from "./components/order-book-wall/order-book-wall";
+export { default as TransactionRoutingMesh } from "./components/transaction-routing-mesh/transaction-routing-mesh";
+export { default as PortfolioCity } from "./components/portfolio-city/portfolio-city";
+export { default as RevenueTerrain } from "./components/revenue-terrain/revenue-terrain";
+export { default as EqualizerGrid } from "./components/equalizer-grid/equalizer-grid";
+export { default as AttentionMatrix } from "./components/attention-matrix/attention-matrix";
+export { default as TerrainGenerator } from "./components/terrain-generator/terrain-generator";
+export { default as DigitalRain } from "./components/digital-rain/digital-rain";

@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-export function TestimonialCarouselCard() {
+export function estimonialCarouselCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isHovered, setIsHovered] = useState(false);

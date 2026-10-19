@@ -9,6 +9,7 @@ export type ComponentEntry = {
 };
 
 const mechanicalComponents = [
+  "monochrome-roadmap",
   "armillary-sphere",
   "astrolabe-rete",
   "balance-beam-scale",
@@ -95,3 +96,5 @@ export const componentCounts = componentCatalog.reduce(
     todo: 0,
   } satisfies Record<ComponentStatus, number>,
 );
+
+

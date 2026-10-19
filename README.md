@@ -6,27 +6,30 @@ A Next.js component gallery for interactive, motion-heavy React studies.
 
 ```text
 app/
-  components/       Stable demo routes, one folder per component.
-  submitted/        Completed submissions and featured experiments.
-  todo/             Draft routes that are intentionally not stable yet.
+  demos/            Thin demo route entries that import from components/.
+  submitted/        Submitted demo route entries.
+  preview/          Preview route entry.
   globals.css       Tailwind theme tokens and app-wide base styles.
-  page.tsx          Gallery index generated from lib/component-catalog.ts.
 components/
-  hero/             Hero-specific component assets.
-  studio/           Shared studio experiments and non-route component drafts.
-  ui/               shadcn/ui primitives.
+  draft/            Components still in progress, demos, shared UI, and experiments.
+  submitted/        Completed component submissions and their assets.
+  featured/         Components selected for the featured collection.
 hooks/              Shared React hooks.
 lib/                Shared utilities and catalog metadata.
 public/             Static assets served by Next.js.
+scripts/            Capture, asset, and maintenance utilities.
 ```
 
 ## Conventions
 
-- Use kebab-case folder names for every route component.
-- Keep route pages in `app/**/page.tsx` and colocate the component, README,
-  image, or video assets inside the same route folder.
-- Put shared primitives in `components/ui`, shared gallery utilities in `lib`,
-  and temporary experiments in `components/studio/drafts`.
+- Keep all component implementations and component-specific files under exactly
+  one of `components/draft`, `components/submitted`, or `components/featured`.
+- Use a kebab-case folder per component and a same-named `.tsx` entry file;
+  colocate that component's README, image, and video assets in the same folder.
+- Keep app page files as thin route entries that import from `components/`.
+- Demo URLs under `/components/...` are rewritten to `app/demos/...`, so route
+  files do not create a second `components` directory.
+- Put shared non-component utilities in `hooks/` and `lib/`.
 - Add new gallery routes to `lib/component-catalog.ts` so the home page stays
   current without importing every demo component into the root bundle.
 

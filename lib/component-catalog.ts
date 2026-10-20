@@ -42,6 +42,7 @@ const mechanicalComponents = [
 ];
 
 const submittedComponents = [
+  "Cylinder3DRing",
   "featured/focus-rail",
   "featured/hypertext-with-decryption",
   "flip-disk-matrix",

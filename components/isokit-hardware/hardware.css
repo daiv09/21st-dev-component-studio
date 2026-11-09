@@ -1,0 +1,53 @@
+.ik-hw-rotor {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.ik-hw-rotor[data-spin="true"] {
+  animation: ik-hw-spin var(--ik-t-move) linear infinite;
+}
+
+@keyframes ik-hw-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ik-hw-wave {
+  transform: translateY(0);
+}
+
+.ik-plate svg[data-run="on"] .ik-hw-wave {
+  animation: ik-hw-bob var(--ik-t-move) var(--ik-ease-move) infinite;
+  animation-delay: calc(var(--i) * var(--ik-stagger));
+}
+
+@keyframes ik-hw-bob {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.ik-hw-shot {
+  animation: ik-hw-shot var(--ik-t-move) var(--ik-ease-fall) both;
+}
+
+@keyframes ik-hw-shot {
+  from {
+    transform: translateY(-16px);
+  }
+}
+
+.hw-stage .ik-plate {
+  height: auto;
+}
+
+.hw-stage .ik-plate > svg {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+}

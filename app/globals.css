@@ -126,3 +126,59 @@
     @apply bg-background text-foreground;
   }
 }
+
+.coffee-fig .roll-in {
+  animation: coffee-roll-in var(--ik-t-state) var(--ik-ease)
+    calc(var(--i) * var(--ik-stagger)) both;
+}
+.coffee-fig .roll-out {
+  animation: coffee-roll-out var(--ik-t-state) var(--ik-ease)
+    calc(var(--i) * var(--ik-stagger)) both;
+}
+@keyframes coffee-roll-in {
+  from {
+    transform: translateY(8px);
+  }
+}
+@keyframes coffee-roll-out {
+  to {
+    transform: translateY(-8px);
+  }
+}
+.coffee-fig .drip-stream {
+  animation: coffee-drip var(--ik-t-move) var(--ik-ease-move) infinite;
+}
+.coffee-fig .drip-drop {
+  animation: coffee-drop var(--ik-t-move) var(--ik-ease-fall) infinite;
+}
+@keyframes coffee-drip {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes coffee-drop {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coffee-fig .roll-out {
+    display: none;
+  }
+  .coffee-fig .drip-stream,
+  .coffee-fig .drip-drop {
+    animation: none;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "isokit": {
+      "source": "aadilghani1/isokit",
+      "sourceType": "github",
+      "skillPath": "skills/isokit/SKILL.md",
+      "computedHash": "8af8cb8639d7f9326f8f3f3049aadcdf03b9abed257c34e83b99f9786cbb831d"
+    }
+  }
+}

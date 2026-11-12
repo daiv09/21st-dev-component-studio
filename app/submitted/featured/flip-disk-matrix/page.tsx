@@ -1,1 +1,1 @@
-export { default } from "@/components/featured/flip-disk-matrix/demo";
+export { default } from "./demo";

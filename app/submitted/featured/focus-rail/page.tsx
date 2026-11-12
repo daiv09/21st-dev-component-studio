@@ -1,1 +1,1 @@
-export { default } from "@/components/featured/focus-rail/demo";
+export { default } from "./demo";

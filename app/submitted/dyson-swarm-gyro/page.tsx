@@ -1,6 +1,6 @@
 "use client";
 
-import Component from "@/components/submitted/dyson-swarm-gyro/DysonSwarmGyro";
+import Component from "./DysonSwarmGyro";
 
 export default function Page() {
   return (

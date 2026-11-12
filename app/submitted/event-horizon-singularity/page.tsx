@@ -1,6 +1,6 @@
 "use client";
 
-import Component from "@/components/submitted/event-horizon-singularity/EventHorizonSingularity";
+import Component from "./EventHorizonSingularity";
 
 export default function Page() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import Component from "@/components/submitted/bio-helix-strand/BioHelixStrand";
+import Component from "./BioHelixStrand";
 
 export default function Page() {
   return (

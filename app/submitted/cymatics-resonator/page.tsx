@@ -1,6 +1,6 @@
 "use client";
 
-import Component from "@/components/submitted/cymatics-resonator/CymaticsResonator";
+import Component from "./CymaticsResonator";
 
 export default function Page() {
   return (

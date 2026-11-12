@@ -1,6 +1,6 @@
 "use client";
 
-import NvidiaDgxPod from "../../app/submitted/NvidiaDgxPod";
+import NvidiaDgxPod from "../../app/submitted/featured/nvidia-dgx-pod/nvidia-dgx-pod";
 import TensorCoreGpu from "./TensorCoreGpu";
 import CpuSocketLga from "./CpuSocketLga";
 import Hbm3MemoryStack from "./Hbm3MemoryStack";
